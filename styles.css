@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Ubuntu Regular;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+body {
+    background-image: url("images/transgender_flag.svg");
+    background-size: cover;      /* ajuste pour remplir le bloc */
+    background-repeat: no-repeat;
+    font-family: Ubuntu Regular;
+}
+nav {
+    background-color: white;
+}
+.page {
+  background-color: #f9f9f9;    /* couleur de fond */
+  border-radius: 12px;
+  border: 5px solid black;       
+  margin: 2rem auto;            /* espacement entre les sections */
+  max-width: 800px;             /* largeur max pour éviter trop grand */
+}
+.hero {
+  background-color: #5BCEFA;    /* couleur de fond */
+  margin: 15px;
+  border-radius: 12px;    
+  height: 30vh;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
+  text-align: left;
+  color: #F9F9F9;
+  padding: 15px;
+}
+.hero img {
+    width: 50px;
+}
+.censored {
+  background: black;
+  color: black;
+  padding: 0 6px;
+  border-radius: 3px;
+  z-index: 10;
+}
+.enbref {
+    background-color: #F5A9B8;
+    margin: 15px;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
+    padding: 0.05px;
+}
+.citation {
+    background-color: white;
+    margin: 15px;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
+    padding: 10px;
+}
