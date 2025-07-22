@@ -2,14 +2,38 @@
     font-family: Ubuntu Regular;
     src: url(fonts/Ubuntu-Regular.ttf);
 }
+@font-face {
+    font-family: Ubuntu Bold;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: Ubuntu Italic;
+    src: url(fonts/Ubuntu-Italic.ttf);
+}
 body {
     background-image: url("images/transgender_flag.svg");
     background-size: cover;      /* ajuste pour remplir le bloc */
     background-repeat: no-repeat;
     font-family: Ubuntu Regular;
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 nav {
+  margin: 7px 7px 0 7px;
+  display: flex;
+  align-items: center;
     background-color: white;
+    border-radius: 15px;
+    height: 15vh;
+}
+nav img {
+  height: 12vh;
+    margin: 10px;
 }
 .page {
   background-color: #f9f9f9;    /* couleur de fond */
@@ -23,12 +47,25 @@ nav {
   margin: 15px;
   border-radius: 12px;    
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
-  text-align: left;
+  text-align: center;
   color: #F9F9F9;
   padding: 15px;
 }
-.hero img {
-    width: 50px;
+.hero h1 {
+  font-family: Ubuntu Bold;
+  margin: 0px;
+  font-size: 2em;
+  text-align: center;
+}
+.hero h2 {
+  font-family: Ubuntu Bold;
+  margin: 10px 0 0 0;
+  font-size: 1.5em;
+}
+.hero p {
+  font-family: Ubuntu Regular;
+  margin-bottom: 0;
+  font-size: 1.2em;
 }
 .censored {
   background: black;
@@ -44,6 +81,21 @@ nav {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
     padding: 0.05px;
+    font-size: 1.2em;
+}
+.enbref ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.enbref span {
+  font-family: Ubuntu Bold;
+}
+.enbref a {
+  text-decoration: none;
+  color: white;
+}
+.enbref a:hover {
+  color: #5BCEFA;
 }
 .citation {
     background-color: white;
@@ -53,3 +105,67 @@ nav {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
     padding: 10px;
 }
+.citation {
+  font-size: 1.1em;
+  font-family: Ubuntu Regular;
+}
+
+.citation span {
+  font-style: italic;
+}
+
+
+
+/* Footer Styles */
+footer {
+  background: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  margin: 0;
+  bottom: 0;
+}
+    
+    footer .footer-content {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    
+    footer .footer-link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    footer .footer-link:hover {
+      color: #F5A9B8;
+    }
+    
+    footer .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+    }
+    
+    footer .footer-social-icon {
+      width: 30px;
+      height: 30px;
+    }
+    
+    footer .footer-social-icon img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+  .footer-social-icon img:hover {
+    transform: scale(1.2); /* Agrandit l'image de 20% */
+  }
+    p.mentions {
+      font-size: 12px;
+    }
+    .mentions-link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
