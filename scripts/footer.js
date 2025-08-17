@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <p><a href="" target="_blank" class="footer-link">Mentions légales</a></p>
   </div>
   <div class="footer-social">
-    <a href="https://github.com/victoria180725" target="_blank" class="footer-social-icon"><img src="icons/github_blank.svg" alt="GitHub"></a>
+    <a href="https://github.com/victoria180725" target="_blank" class="footer-social-icon"><img src="/icons/github_blank.svg" alt="GitHub"></a>
   </div>
 `
 });
