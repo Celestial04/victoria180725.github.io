@@ -71,12 +71,18 @@ nav .item {
 
 /* Footer Styles */
 footer {
+  display: flex;                 /* active flexbox */
+  flex-direction: column;        /* empile le contenu */
+  justify-content: center;       /* centre verticalement */
+  align-items: center;           /* centre horizontalement */
+  
   background: black;
   color: white;
   padding: 1em;
-  text-align: center;
   margin: 0;
   bottom: 0;
+  height: 14.2vh;
+  text-align: center;
 }
     
     footer .footer-content {
