@@ -33,6 +33,269 @@
   border-radius: 3px;
   z-index: 10;
 }
+
+@font-face {
+    font-family: Ubuntu Regular;
+    src: url(/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Ubuntu Bold;
+    src: url(/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: Ubuntu Italic;
+    src: url(/fonts/Ubuntu-Italic.ttf);
+}
+body {
+  position: relative;
+    background-image: url("/images/aurora-borealis-landscape-sea.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Ubuntu Regular;
+  height: 100%;
+  margin: 0;
+}
+h2 {
+    margin: 0;
+}
+p {
+  margin: 0;
+    font-size: 1.15em;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  margin: 7px 7px 0 7px;
+  display: flex;
+  align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    height: 15vh;
+    align-self: center;
+    width: 99vw;
+}
+nav img {
+  height: 12vh;
+    margin: 10px;
+}
+nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 94.4vw;
+}
+nav .item {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7vw;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(249, 249, 249, 0.5);    /* couleur de fond */
+  border-radius: 12px;
+  border: 5px solid black;       
+  margin: 5vw auto;            /* espacement entre les sections */
+  max-width: 800px;
+  height: 100%;       /* largeur max pour éviter trop grand */
+
+}
+
+/* Footer Styles */
+footer {
+  position: absolute;
+  display: flex;                 /* active flexbox */
+  flex-direction: column;        /* empile le contenu */
+  justify-content: center;       /* centre verticalement */
+  align-items: center;           /* centre horizontalement */
+  
+  background: black;
+  color: white;
+  padding: 1em;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+    
+    footer .footer-content {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    
+    footer .footer-link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    footer .footer-link:hover {
+      color: #F5A9B8;
+    }
+    
+    footer .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+    }
+    
+    footer .footer-social-icon {
+      width: 30px;
+      height: 30px;
+    }
+    
+    footer .footer-social-icon img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+  .footer-social-icon img:hover {
+    transform: scale(1.2); /* Agrandit l'image de 20% */
+  }
+    p.mentions {
+      font-size: 12px;
+    }
+    .mentions-link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+@media (max-width: 480px) {
+  nav {
+  margin: 7px 7px 0 7px;
+  display: flex;
+  align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    height: 12vh;
+    align-self: center;
+    width: 99vw;
+  }
+  nav img {
+    height: 8vh;
+    margin: 10px;
+  }
+  nav .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80vw;
+    margin-right: 2vw;
+  }
+  nav .item {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+  }
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(249, 249, 249, 0.5);    /* couleur de fond */
+  border-radius: 12px;
+  border: 5px solid black;       
+  margin: 2rem auto;            /* espacement entre les sections */
+  max-width: 300px;
+  height: 100%;           /* largeur max pour éviter trop grand */
+}
+  .hero {
+  background-color: #5BCEFA;    /* couleur de fond */
+  margin: 15px;
+  border-radius: 12px;    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
+  text-align: center;
+  color: #F9F9F9;
+  padding: 15px;
+  }
+  .hero h1 {
+    font-family: Ubuntu Bold;
+    margin: 0px;
+    font-size: 4vh;
+    text-align: center;
+  }
+.hero h2 {
+  font-family: Ubuntu Bold;
+  margin: 10px 0 0 0;
+  font-size: 3vh;
+}
+.hero p {
+  font-family: Ubuntu Regular;
+  margin-bottom: 0;
+  font-size: 2.5vh;
+}
+.censored {
+  background: black;
+  color: black;
+  padding: 0 6px;
+  border-radius: 3px;
+  z-index: 10;
+}
+.enbref {
+    background-color: #F5A9B8;
+    margin: 15px;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
+    padding: 0.05px;
+    font-size: 1.2em;
+}
+.enbref ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.enbref span {
+  font-family: Ubuntu Bold;
+}
+.enbref a {
+  text-decoration: none;
+  color: white;
+}
+.enbref a:hover {
+  color: #5BCEFA;
+}
+.citation {
+    background-color: white;
+    margin: 15px;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre douce */
+    padding: 10px;
+}
+.citation {
+  font-size: 1em;
+  font-family: Ubuntu Regular;
+  text-align: center;
+}
+
+.citation span {
+  font-style: italic;
+}
+}
+h1 {
+    color: black;
+    text-align: center;
+    height: 61.6vh;
+    display: flex;                 /* active flexbox */
+  flex-direction: column;        /* empile le contenu */
+  justify-content: center;       /* centre verticalement */
+  align-items: center;
+}
+.page {
+    min-width: 50vw;
+    height: 59.6vh;
+}
 .enbref {
     background-color: #F5A9B8;
     margin: 15px;
